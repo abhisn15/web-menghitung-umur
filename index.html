@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web penghitung umur</title>
+    <!-- INI UNTUK MENGHUBUNGKAN KE STYLE.CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="section">
+      <h1 data-aos="fade-down" data-aos-duration="1000">
+        WEBSITE PENGHITUNG UMUR
+      </h1>
+      <div data-aos="flip-left" data-aos-duration="1000" class="form">
+        <!-- Isi form Anda di sini -->
+        <label>Masukkan tahun kelahiran anda:</label>
+        <input
+          type="number"
+          placeholder="Contoh: 1945"
+          id="inputUltah"
+          onkeydown="saatDiEnter(event)"
+          oninput="maximumInput()"
+        />
+        <button type="submit" onclick="validasiForm()">Submit</button>
+        <p id="hasil"></p>
+        <p id="peringatan"></p>
+      </div>
+      <p data-aos="fade-up" data-aos-duration="1000">&copy Copyright by Abhi</p>
+    </div>
+    <!-- INI UNTUK MENGHUBUNGKSN FILE JAVASCRIPT DI FILE INDEX.JS -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
